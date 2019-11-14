@@ -27,7 +27,7 @@ public class YouTubeModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void getVideosIndex(final int reactTag, final Promise promise) {
+    public void videosIndex(final int reactTag, final Promise promise) {
         try {
             UIManagerModule uiManager = mReactContext.getNativeModule(UIManagerModule.class);
             uiManager.addUIBlock(new UIBlock() {
@@ -44,7 +44,7 @@ public class YouTubeModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void getCurrentTime(final int reactTag, final Promise promise) {
+    public void currentTime(final int reactTag, final Promise promise) {
         try {
             UIManagerModule uiManager = mReactContext.getNativeModule(UIManagerModule.class);
             uiManager.addUIBlock(new UIBlock() {
@@ -61,7 +61,7 @@ public class YouTubeModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void getDuration(final int reactTag, final Promise promise) {
+    public void duration(final int reactTag, final Promise promise) {
         try {
             UIManagerModule uiManager = mReactContext.getNativeModule(UIManagerModule.class);
             uiManager.addUIBlock(new UIBlock() {
